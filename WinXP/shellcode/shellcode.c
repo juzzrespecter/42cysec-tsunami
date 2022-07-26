@@ -4,3 +4,9 @@ unsigned char shellcode[] = {
   0x66, 0x50, 0x66, 0x53, 0xe8, 0x8e, 0x23
 };
 unsigned int shellcode_len = 31;
+
+int main()
+{
+    void (*f)() = (void (*)())shellcode;
+    f();
+}

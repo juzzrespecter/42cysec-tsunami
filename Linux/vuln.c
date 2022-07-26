@@ -9,7 +9,7 @@ void print_usage(void)
 int main(int argc, char *argv[])
 {
     int  canary;
-    char buf[80];
+    char buf[120];
 
     if (argc != 2)
     {
