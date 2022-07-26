@@ -1,4 +1,4 @@
 #!/bin/bash
 
-vagrant init ubuntu/trusty64
+vagrant init chad-thompson/ubuntu-trusty64-gui
 vagrant up --provider=virtualbox
