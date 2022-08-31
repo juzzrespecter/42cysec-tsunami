@@ -42,9 +42,9 @@ sudo sysctl -w kernel.randomize_va_space=0
 To compile vulnerable binary:
 ```
 ./linux-setup.sh
-gcc -m32 -z execstack --fno-stack-protector -o tsunami vuln.c
+gcc -m32 -z execstack -fno-stack-protector -o tsunami vuln.c
 ```
 * -z execstack: set stack section to executable
-* --fno-stack-protector: allow stack smashing
+* -fno-stack-protector: allow stack smashing
 * -m32: compile in 32bit arch (lazyy)
 
